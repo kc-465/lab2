@@ -1,1 +1,27 @@
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media(min-width:767px){
+    .container{
+        display:flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+}
+
+@media(min-width:768px){
+    .navbar, .card-grid {
+        flex-direction: row;
+    }
+
+    .card {
+        flex-basis: 30%;
+    }
+
+    .card-grid {
+        justify-content: space-between;
+    }
+}
